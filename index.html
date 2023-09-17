@@ -8,8 +8,6 @@
         body {
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: white;
         }
 
         .black-section {
@@ -18,18 +16,8 @@
             text-align: center;
             padding: 20px;
             width: 25%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .profile-pic {
-            max-width: 100px;
-            height: auto;
-            border-radius: 50%;
-            margin-bottom: 10px;
+            float: left;
+            border-radius: 0 50% 50% 0;
         }
 
         .white-section {
@@ -37,6 +25,17 @@
             text-align: center;
             padding: 20px;
             width: 75%;
+            float: left;
+        }
+
+        .black-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
         }
 
         h1 {
@@ -52,26 +51,25 @@
             background-color: black;
             color: white;
             padding: 10px;
+            clear: both;
         }
     </style>
 </head>
 <body>
     <div class="black-section">
-        <img class="profile-pic" src="images/profile_pic.jpeg" alt="Mayur M Manjrekar's Picture">
-        <h1>Mayur M Manjrekar</h1>
+        <header>
+            <img src="images/profile_pic.jpeg" alt="Mayur M Manjrekar's Picture">
+            <h1>Mayur M Manjrekar</h1>
+        </header>
     </div>
 
     <div class="white-section">
         <main>
             <h2>About Me</h2>
-            <p>Welcome to my website! This is a brief introduction about myself.</p>
+            <p>Welcome to my website! I am Mayur M Manjrekar, and this is a brief introduction about myself.</p>
 
             <!-- Add more content about yourself here -->
         </main>
-
-        <footer>
-            <p>&copy; 2023 Mayur M Manjrekar</p>
-        </footer>
     </div>
 </body>
 </html>

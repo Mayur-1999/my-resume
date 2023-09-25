@@ -1,51 +1,76 @@
-html
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
- <title>Two-Sided Webpage</title>
- <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayur M Manjrekar's Website</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
 
-    #left-side {
-      float: left;
-      width: 25%;
-      height: 100vh;
-      background-color: black;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
+        .black-section {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            width: 25%;
+            float: left;
+            border-radius: 0 50% 50% 0;
+        }
 
-    #right-side {
-      float: right;
-      width: 75%;
-      height: 100vh;
-      background-color: white;
-    }
+        .white-section {
+            background-color: white;
+            text-align: center;
+            padding: 20px;
+            width: 75%;
+            float: left;
+        }
 
-    #cloud-devops-pic {
-      width: 50%;
-      height: auto;
-      border-radius: 50%;
-    }
+        .black-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 10px;
+        }
 
-    #cloud-devops-text {
-      color: white;
-      font-size: 24px;
-      font-weight: bold;
-      text-align: center;
-    }
- </style>
+        h1 {
+            margin: 0;
+        }
+
+        h2 {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            clear: both;
+        }
+    </style>
 </head>
 <body>
- <div id="left-side">
-    <img id="profile_pic" src="images/profile_pic.jpeg" alt="Cloud DevOps Engineer">
-    <div id="cloud-devops-text">CLOUD DEVOPS ENGINEER</div>
- </div>
- <div id="right-side"></div>
+    <div class="black-section">
+        <header>
+            <img src="images/profile_pic.jpeg" alt="Mayur M Manjrekar's Picture">
+            <h1>Mayur M Manjrekar</h1>
+        </header>
+    </div>
+
+    <div class="white-section">
+        <main>
+            <h2>About Me</h2>
+            <p>Welcome to my website! I am Mayur M Manjrekar, and this is a brief introduction about myself.</p>
+
+            <!-- Add more content about yourself here -->
+        </main>
+    </div>
 </body>
 </html>

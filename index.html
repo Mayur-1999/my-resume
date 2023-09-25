@@ -1,76 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mayur M Manjrekar's Website</title>
+    <title>Under Development</title>
     <style>
         body {
             margin: 0;
             padding: 0;
+            display: flex;
+            height: 100vh;
+            width: 100%;
         }
 
-        .black-section {
+        .left {
             background-color: black;
-            color: white;
-            text-align: center;
-            padding: 20px;
             width: 25%;
-            float: left;
-            border-radius: 0 50% 50% 0;
+            height: 100%;
         }
 
-        .white-section {
+        .right {
             background-color: white;
-            text-align: center;
-            padding: 20px;
             width: 75%;
-            float: left;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
-        .black-section img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
-            display: block;
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 10px;
+        .message {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
         }
 
-        h1 {
-            margin: 0;
-        }
-
-        h2 {
-            text-decoration: underline;
-        }
-
-        footer {
-            text-align: center;
-            background-color: black;
-            color: white;
-            padding: 10px;
-            clear: both;
+        .hosted {
+            font-size: 16px;
+            color: gray;
         }
     </style>
 </head>
 <body>
-    <div class="black-section">
-        <header>
-            <img src="images/profile_pic.jpeg" alt="Mayur M Manjrekar's Picture">
-            <h1>Mayur M Manjrekar</h1>
-        </header>
-    </div>
-
-    <div class="white-section">
-        <main>
-            <h2>About Me</h2>
-            <p>Welcome to my website! I am Mayur M Manjrekar, and this is a brief introduction about myself.</p>
-
-            <!-- Add more content about yourself here -->
-        </main>
+    <div class="left"></div>
+    <div class="right">
+        <div class="message">This page is under development</div>
+        <div class="hosted">Hosted using GitHub Pages</div>
     </div>
 </body>
 </html>

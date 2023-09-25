@@ -1,28 +1,51 @@
+html
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Two-Sided Webpage</title>
-  <style>
+ <title>Two-Sided Webpage</title>
+ <style>
     body {
       margin: 0;
       padding: 0;
     }
+
     #left-side {
       float: left;
       width: 25%;
       height: 100vh;
       background-color: black;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
     }
+
     #right-side {
       float: right;
       width: 75%;
       height: 100vh;
       background-color: white;
     }
-  </style>
+
+    #cloud-devops-pic {
+      width: 50%;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    #cloud-devops-text {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      text-align: center;
+    }
+ </style>
 </head>
 <body>
-  <div id="left-side"></div>
-  <div id="right-side"></div>
+ <div id="left-side">
+    <img id="profile_pic" src="images/profile_pic.jpeg" alt="Cloud DevOps Engineer">
+    <div id="cloud-devops-text">CLOUD DEVOPS ENGINEER</div>
+ </div>
+ <div id="right-side"></div>
 </body>
 </html>

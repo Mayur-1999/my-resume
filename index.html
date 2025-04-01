@@ -1,57 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mayur M Manjrekar</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            height: 100vh;
-            width: 100%;
-        }
-        .left {
-            background-color: black;
-            width: 25%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .right {
-            background-color: white;
-            width: 75%;
-            height: 100%;
-        }
-        .message {
-            font-size: 24px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-        .hosted {
-            font-size: 16px;
-            color: gray;
-            text-align: center;
-        }
-        .image {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            margin: 0 auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume</title>
+  <script src="https://unpkg.com/feather-icons"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class="left">
-        <img src="images/profile_pic.jpeg" alt="Mayur M Manjrekar" class="image">
+  <div class="container">
+    <div class="profile">
+      <div class="profile_container">
+        <div class="profile_profileImg">
+          <img src="./images/profileimage.jpeg" alt="Mayur Manjrekar">
+        </div>
+        <div>
+          <h1 class="profile_name">
+            <span class="profile_name_firstName">Mayur</span>
+            <span class="profile_name_lastName">Manjrekar</span>
+          </h1>
+          <p class="profile_title">DevOps Engineer</p>
+          <p class="description profile_description">
+            Cloud Engineer with over 3 years of experience in automation and DevOps practices. My core responsibilities
+            encompass deploying cloud infrastructure, establishing robust CI/CD pipelines to streamline the development
+            process. My work bridges the gap between development and operations for efficient, agile solutions.
+          </p>
+          <a class="downloadBtn" href="./Mayur-Resume.pdf" download="Resume.pdf">Download Resume</a>
+        </div>
+      </div>
     </div>
-    <div class="right">
-        <div class="message">MAYUR M MANJREKAR</div>
-        <div class="message">This Page is under Development</div>
-        <div class="hosted">Hosted using GitHub Pages</div>
+    <div class="group-1">
+      <div class="skills">
+        <h3 class="title">Expertise</h3>
+        <h4 class="item_title">CloudTechnologies</h4>
+        <ul class="skills_list description">
+          <li>Google Cloud Platform</li>
+          <li>Google Kubernetes Engine</li>
+        </ul>
+        <h4 class="item_title">CI/CD</h4>
+        <ul class="skills_list description">
+          <li>GitHub Actions</li>
+          <li>Azure DevOps</li>
+          <li>Jenkins</li>
+        </ul>
+        <h4 class="item_title">DevOpsTools</h4>
+        <ul class="skills_list description">
+          <li>Terraform</li>
+          <li>Ansible</li>
+          <li>Packer</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Dockerfile</li>
+        </ul>
+        <ul class="skills_list description">
+          <li>Shell Scripting, Linux, YAML</li>
+        </ul>
     </div>
+      <!-- <div class="ref">
+        <h3 class="title">Reference</h3>
+        <div class="ref_item">
+          <h4 class="ref_name">Rashid Chy</h4>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, neque?</p>
+        </div>
+        <div class="ref_item">
+          <h4 class="ref_name">Ayman Rahman</h4>
+          <p class="description"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </p>
+        </div>
+      </div> -->
+
+      <div class="edu">
+        <h3 class="title">Education</h3>
+        <div class="edu_item">
+          <p class="item_preTitle">2017-2021</p>
+          <h4 class="item_title">Bachelors in Engineering</h4>
+          <p class="item_subtitle">
+            Gogte Institute of Technology
+          </p>
+        </div>
+        <!-- <div class="edu_item">
+          <p class="item_preTitle">2008-2012</p>
+          <h4 class="item_title">BSC in CSE</h4>
+          <p class="item_subtitle">
+            Chittagong University
+          </p>
+        </div> -->
+      </div>
+
+      <div class="certification">
+        <h3 class="title">certification</h3>
+        <div class="certification_item">
+          <p class="item_preTitle">2022</p>
+          <h4 class="item_title">Google Cloud Certified: Associate Cloud Engineer</h4>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam,
+        <div class="certification_item">
+          </p>
+        </div>
+          <p class="item_preTitle">2024</p>
+          <h4 class="item_title">Google Cloud Certified: Professional DevOps Engineer</h4>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam,
+        <div class="certification_item">
+            </p>
+        </div>
+          <p class="item_preTitle">2024</p>
+          <h4 class="item_title">GitHub Foundations</h4>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam,
+        <div class="certification_item">
+            </p>
+        </div>
+          <p class="item_preTitle">2024</p>
+          <h4 class="item_title">GitHub Actions</h4>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam,
+        <!-- <div class="certification_item">
+            </p>
+        </div>
+          <p class="item_preTitle">2024</p>
+          <h4 class="item_title">Google Cloud Certified: Associate Cloud Engineer</h4>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam, -->
+        </p>
+        </div>
+      </div>
+    </div>
+    <div class="group-2">
+      <div class="exp">
+        <h3 class="title">Experience</h3>
+        <div class="exp_item">
+          <p class="item_preTitle">December 2024- Present</p>
+          <h4 class="item_title">Globant</h4>
+          <p class="item_subtitle">DevOps Engineer</p>
+          <p class=" description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam,
+          </p>
+        </div>
+        <div class="exp_item">
+          <p class="item_preTitle">February 2022- December 2024</p>
+          <h4 class="item_title">Cognizant</h4>
+          <p class="item_subtitle">Cloud DevOps Engineer | Google Cloud Migration Project</p>
+          <p class="description">
+            Worked on a large-scale cloud migration project for on-premises applications to Google Cloud Platform (GCP).
+          </p>
+          <ul class="description list">
+            <li>Architected a zero-downtime deployment strategy leveraging Terraform.</li>
+           <li>Automated the deployment process through the development of robust CI/CD pipelines using AzureDevOps.</li>
+           <li>Reduced operational costs and manual intervention by crafting efficient shell scripts for task automation.</li>
+           <li>Leveraged Google Kubernetes Engine (GKE) to deploy containerized applications by creating Dockerfile and Kubernetes manifests for efficient and scalable deployments.</li>
+           <li>Demonstrated strong problem-solving skills by effectively troubleshooting issues to resolve application deployment and runtime challenges.</li>
+           <li>Collaborated with Development, Operation team to deploy the applications & maintain the infrastructure.</li>
+           <li>Demonstrated proficiency in Cloud SQL database management</li>
+         </ul>
+        </div>
+      </div>
+      <div class="awards">
+        <h3 class="title">Awards</h3>
+        <div class="awards_item">
+          <p class="item_preTitle">2024</p>
+          <h4 class="item_title">Cognizant</h4>
+          <p class=" description">
+            Sapphire Award: Budding star in the project Recognized for exceptional dedication and expertise in GCP and Azure
+            DevOps, consistently delivering high-quality solutions and meeting tight deadlines
+          </p>
+        </div>
+        <div class="awards_item">
+          <p class="item_preTitle">2023</p>
+          <h4 class="item_title">Cognizant</h4>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore
+            magna aliqua. Ut enim ad minim veniam,
+          </p>
+        </div>
+      </div>
+
+      <div class="interest">
+        <h3 class="title">Interest</h3>
+        <div class="interest_items">
+          <div class="interest_item">
+            <i data-feather="music"></i>
+            <span>Music</span>
+          </div>
+          <div class="interest_item">
+            <i data-feather="book"></i>
+            <span>Books</span>
+          </div>
+          <div class="interest_item">
+            <i data-feather="map"></i>
+            <span>Travel</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <hr>
+    <div class="group-3">
+      <div class="contact">
+        <h3 class="title">Contact</h3>
+        <div class="contact_info">
+          <p class="description">
+            Banglore, Karnataka
+          </p>
+          <p class="description">
+            +91 6360659809
+          </p>
+          <p class="description">
+            mayurmanjrekar1999@gmail.com
+          </p>
+        </div>
+      </div>
+      <div class="social">
+        <h3 class="title">Socials</h3>
+        <div class="social_items">
+          <a href="https://github.com/Mayur-1999" target="_b" class="social_item">
+            <i data-feather="github"></i>
+            <span>/Mayur-1999</span>
+          </a>
+          <!-- <a href="#" target="_blank" class="social_item">
+            <i data-feather="twitter"></i>
+            <span>/shaifarfan08</span>
+          </a> -->
+          <a href="https://www.linkedin.com/in/mayur-manjrekar" target="_blank" class="social_item">
+            <i data-feather="linkedin"></i>
+            <span>/Mayur Manjrekar</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    feather.replace()
+  </script>
 </body>
+
 </html>

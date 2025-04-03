@@ -66,6 +66,7 @@ a {
 	background: #070707;
 	grid-template-columns: 1fr 1fr;
 	gap: 4rem;
+	/* background: transparent; */
 }
 @media only screen and (max-width: 768px) {
 	.container {
@@ -114,6 +115,15 @@ a {
 .profile_profileImg {
 	max-width: 250px;
 }
+
+.profile_profileImg img {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+	object-position: top;
+}
+
 .profile_name_firstName {
 	color: white;
 	font-weight: 200;
